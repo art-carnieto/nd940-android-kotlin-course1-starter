@@ -9,7 +9,7 @@ plugins {
 
 android {
     namespace 'com.udacity.shoestore'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.udacity.shoestore"
@@ -21,6 +21,11 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    compileOptions {
+        sourceCompatibility = 17
+        targetCompatibility = 17
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -29,13 +34,7 @@ android {
     }
     buildFeatures {
         dataBinding true
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
+        viewBinding true
     }
 }
 
@@ -50,6 +49,9 @@ dependencies {
     // Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
     implementation "androidx.navigation:navigation-ui-ktx:2.5.3"
+    implementation 'androidx.annotation:annotation:1.6.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.8.4'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

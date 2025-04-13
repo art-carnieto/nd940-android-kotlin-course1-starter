@@ -16,11 +16,11 @@ Open the starter project in Android Studio
 
 ##Steps
 
-1. Open the starter project in Android Studio
+1. Open the starter project in Android Studio :heavy_check_mark:
 
-2. Add the navigation libraries to the app build.gradle file
+2. Add the navigation libraries to the app build.gradle file :heavy_check_mark:
 
-3. Add the safe-arg plugin to the main and app build.gradle file
+3. Add the safe-arg plugin to the main and app build.gradle file :heavy_check_mark:
 
 4. Create a new navigation xml file
 

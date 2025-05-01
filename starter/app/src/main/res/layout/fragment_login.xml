@@ -1,14 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.LoginFragment">
-
-    <TextView
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:context=".ui.LoginFragment"
+        android:background="@color/colorMainLogoBackground">
+
+    <ImageView
+            android:id="@+id/imageViewLoginLogo"
+            android:layout_width="309dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginBottom="35dp"
+            android:contentDescription="@string/shoe_store_main_logo_content_description"
+            android:src="@drawable/shoe_store_main_logo"
+            app:layout_constraintBottom_toTopOf="@+id/textViewLoginEmailLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/textViewLoginEmailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:text="@string/login_email_label"
+            app:layout_constraintBottom_toTopOf="@+id/editTextLoginEmailField"
+            app:layout_constraintStart_toStartOf="@+id/editTextLoginEmailField"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewLoginLogo" />
+
+    <EditText
+            android:id="@+id/editTextLoginEmailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:ems="10"
+            android:hint="@string/login_email_hint"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/textViewLoginPasswordLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLoginEmailLabel"
+            tools:text='test@example.com' />
+
+    <TextView
+            android:id="@+id/textViewLoginPasswordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:text="@string/login_password_label"
+            app:layout_constraintBottom_toTopOf="@+id/editTextLoginPasswordField"
+            app:layout_constraintStart_toStartOf="@+id/editTextLoginPasswordField"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLoginEmailField" />
+
+    <EditText
+            android:id="@+id/editTextLoginPasswordField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:ems="10"
+            android:hint="@string/login_password_hint"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/checkBoxLoginRememberMe"
+            app:layout_constraintStart_toStartOf="@+id/editTextLoginEmailField"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLoginPasswordLabel"
+            tools:text="abcdefgh" />
+
+    <CheckBox
+            android:id="@+id/checkBoxLoginRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="141dp"
+            android:text="@string/login_checkbox_remember_me"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/editTextLoginPasswordField"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLoginPasswordField" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

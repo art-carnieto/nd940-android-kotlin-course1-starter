@@ -8,74 +8,74 @@
         android:background="@color/colorMainLogoBackground">
 
     <ImageView
-            android:id="@+id/imageViewLoginLogo"
+            android:id="@+id/loginLogo"
             android:layout_width="309dp"
             android:layout_height="0dp"
             android:layout_marginTop="68dp"
             android:layout_marginBottom="35dp"
             android:contentDescription="@string/shoe_store_main_logo_content_description"
             android:src="@drawable/shoe_store_main_logo"
-            app:layout_constraintBottom_toTopOf="@+id/textViewLoginEmailLabel"
+            app:layout_constraintBottom_toTopOf="@+id/loginEmailLabel"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-            android:id="@+id/textViewLoginEmailLabel"
+            android:id="@+id/loginEmailLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="14dp"
             android:text="@string/login_email_label"
-            app:layout_constraintBottom_toTopOf="@+id/editTextLoginEmailField"
-            app:layout_constraintStart_toStartOf="@+id/editTextLoginEmailField"
-            app:layout_constraintTop_toBottomOf="@+id/imageViewLoginLogo" />
+            app:layout_constraintBottom_toTopOf="@+id/loginEmailField"
+            app:layout_constraintStart_toStartOf="@+id/loginEmailField"
+            app:layout_constraintTop_toBottomOf="@+id/loginLogo" />
 
     <EditText
-            android:id="@+id/editTextLoginEmailField"
+            android:id="@+id/loginEmailField"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:ems="10"
             android:hint="@string/login_email_hint"
             android:inputType="textEmailAddress"
-            app:layout_constraintBottom_toTopOf="@+id/textViewLoginPasswordLabel"
+            app:layout_constraintBottom_toTopOf="@+id/loginPasswordLabel"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewLoginEmailLabel"
+            app:layout_constraintTop_toBottomOf="@+id/loginEmailLabel"
             tools:text='test@example.com' />
 
     <TextView
-            android:id="@+id/textViewLoginPasswordLabel"
+            android:id="@+id/loginPasswordLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="14dp"
             android:text="@string/login_password_label"
-            app:layout_constraintBottom_toTopOf="@+id/editTextLoginPasswordField"
-            app:layout_constraintStart_toStartOf="@+id/editTextLoginPasswordField"
-            app:layout_constraintTop_toBottomOf="@+id/editTextLoginEmailField" />
+            app:layout_constraintBottom_toTopOf="@+id/LoginPasswordField"
+            app:layout_constraintStart_toStartOf="@+id/LoginPasswordField"
+            app:layout_constraintTop_toBottomOf="@+id/loginEmailField" />
 
     <EditText
-            android:id="@+id/editTextLoginPasswordField"
+            android:id="@+id/LoginPasswordField"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="14dp"
             android:ems="10"
             android:hint="@string/login_password_hint"
             android:inputType="textPassword"
-            app:layout_constraintBottom_toTopOf="@+id/checkBoxLoginRememberMe"
-            app:layout_constraintStart_toStartOf="@+id/editTextLoginEmailField"
-            app:layout_constraintTop_toBottomOf="@+id/textViewLoginPasswordLabel"
+            app:layout_constraintBottom_toTopOf="@+id/loginRememberMe"
+            app:layout_constraintStart_toStartOf="@+id/loginEmailField"
+            app:layout_constraintTop_toBottomOf="@+id/loginPasswordLabel"
             tools:text="abcdefgh" />
 
     <CheckBox
-            android:id="@+id/checkBoxLoginRememberMe"
+            android:id="@+id/loginRememberMe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="141dp"
             android:text="@string/login_checkbox_remember_me"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/editTextLoginPasswordField"
-            app:layout_constraintTop_toBottomOf="@+id/editTextLoginPasswordField" />
+            app:layout_constraintStart_toStartOf="@+id/LoginPasswordField"
+            app:layout_constraintTop_toBottomOf="@+id/LoginPasswordField" />
 
     <Button
             android:id="@+id/login_button"
@@ -89,7 +89,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBoxLoginRememberMe"
+            app:layout_constraintTop_toBottomOf="@+id/loginRememberMe"
             app:layout_constraintVertical_bias="0.0" />
 
 

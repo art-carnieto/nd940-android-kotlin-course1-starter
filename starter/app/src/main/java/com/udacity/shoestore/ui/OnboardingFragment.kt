@@ -24,7 +24,7 @@ class OnboardingFragment : Fragment() {
         Timber.d("onCreateView")
         _binding = FragmentOnboardingBinding.inflate(inflater, container, false)
         val view = binding.root
-
+        binding.onboardingTitle.requestFocus()
         return view
     }
 }

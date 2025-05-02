@@ -1,19 +1,17 @@
 package com.udacity.shoestore.ui
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.Navigation
-import com.udacity.shoestore.R
-import com.udacity.shoestore.databinding.FragmentLoginBinding
+import androidx.fragment.app.Fragment
+import com.udacity.shoestore.databinding.FragmentOnboardingBinding
 import timber.log.Timber
 
-class LoginFragment : Fragment() {
+class OnboardingFragment : Fragment() {
 
     // from https://developer.android.com/topic/libraries/view-binding#fragments
-    private lateinit var _binding: FragmentLoginBinding
+    private lateinit var _binding: FragmentOnboardingBinding
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding
@@ -24,13 +22,8 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         Timber.d("onCreateView")
-        _binding = FragmentLoginBinding.inflate(inflater, container, false)
+        _binding = FragmentOnboardingBinding.inflate(inflater, container, false)
         val view = binding.root
-
-        val loginButton = binding.loginButton
-        loginButton.setOnClickListener (
-            Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_onboardingFragment)
-        )
 
         return view
     }

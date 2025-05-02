@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">ShoeStore</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="login_email_hint">Type here your e-mail</string>
     <string name="login_email_label">E-mail:</string>
@@ -8,4 +7,8 @@
     <string name="login_password_hint">Type your password here</string>
     <string name="login_checkbox_remember_me">Remember me</string>
     <string name="shoe_store_main_logo_content_description">Shoe Store main logo</string>
+    <string name="login_login_button"><![CDATA[Login ->]]></string>
+    <string name="onboarding_welcome_title">Welcome to Shoe Store app!</string>
+    <string name="onboarding_dont_show_again">Do not show this again</string>
+    <string name="onboarding_text">On this app, you can check out the best and most comfortable shoes and shop them in a quick and painless way!\n\nOur app is designed to be used for all kind of publics, and with the best selection of shoes from all ages, styles, colors and more!\n\nLooking for a classic shoe for a formal event, such as business meetings, weedings, proms? We have it!\n\nLooking for something more modern, stilish, slicky? We have it too!\n\n\n\nIf you get lost or need any kind of support, access the help menu located on the top left menu button with a question mark icon (?).</string>
 </resources>

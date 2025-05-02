@@ -19,11 +19,10 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/loginFragment"
-        android:name="com.udacity.shoestore.ui.LoginFragment"
+        android:id="@+id/navHostFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
-
-    </androidx.fragment.app.FragmentContainerView>
+        app:navGraph="@navigation/navigation"
+            />
 </LinearLayout>

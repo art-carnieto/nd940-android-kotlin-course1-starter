@@ -82,7 +82,7 @@
             android:layout_width="131dp"
             android:layout_height="53dp"
             android:layout_marginTop="36dp"
-            android:backgroundTint="#96FD4E"
+            android:backgroundTint="@color/colorActionButton"
             android:text="@string/login_login_button"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"

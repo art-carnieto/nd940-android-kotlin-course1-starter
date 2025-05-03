@@ -52,4 +52,17 @@
             android:layout_marginTop="@dimen/onboarding_margin_vertical"
             android:layout_marginEnd="@dimen/onboarding_margin_horizontal"
             android:text="@string/onboarding_dont_show_again" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/onboardingNextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="@dimen/onboarding_margin_horizontal"
+            android:layout_marginTop="@dimen/onboarding_margin_vertical"
+            android:layout_marginEnd="@dimen/onboarding_margin_horizontal"
+            android:layout_marginBottom="@dimen/onboarding_margin_vertical"
+            android:clickable="true"
+            app:backgroundTint="@color/colorActionButton"
+            app:srcCompat="@android:drawable/ic_media_play" />
 </LinearLayout>

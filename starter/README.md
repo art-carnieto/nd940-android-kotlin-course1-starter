@@ -14,7 +14,7 @@ Open the starter project in the latest stable version of Android Studio.
 
 Open the starter project in Android Studio
 
-##Steps
+## Steps
 
 1. Open the starter project in Android Studio :heavy_check_mark:
 
@@ -22,25 +22,23 @@ Open the starter project in Android Studio
 
 3. Add the safe-arg plugin to the main and app build.gradle file :heavy_check_mark:
 
-4. Create a new navigation xml file
+4. Create a new navigation xml file :heavy_check_mark:
 
-5. Create a new Login destination.
+5. Create a new Login destination. :heavy_check_mark:
 
-   * Include email and password labels 
+   - Include email and password fields :heavy_check_mark:
+   - Create buttons for creating a new login and logging in with an existing account :heavy_check_mark:
+   - Clicking either button should navigate to the Welcome Screen. :heavy_check_mark:
 
-   - Include email and password fields
-   - Create buttons for creating a new login and logging in with an existing account
-   - Clicking either button should navigate to the Welcome Screen.
+6. Create a new Welcome screen destination that includes: :heavy_check_mark:
 
-6. Create a new Welcome screen destination that includes:
+   * A new layout :heavy_check_mark:
+   * At least 2 textviews :heavy_check_mark:
+   * A navigation button with actions to navigate to the instructions screen :heavy_check_mark:
 
-   * A new layout
-   * At least 2 textviews
-   * A navigation button with actions to navigate to the instructions screen
+7. Create a new Instruction destination that includes: :heavy_check_mark:
 
-7. Create a new Instruction destination that includes:
-
-   * A new layout
+   * A new layout :heavy_check_mark:
    * At least 2 textviews
    * A navigation button with actions to navigate to the shoe list screen
 

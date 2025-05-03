@@ -27,8 +27,13 @@ class LoginFragment : Fragment() {
         _binding = FragmentLoginBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        val loginButton = binding.loginButton
-        loginButton.setOnClickListener (
+        val loginButtonExisting = binding.loginButtonExistingAcc
+        loginButtonExisting.setOnClickListener (
+            Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_onboardingFragment)
+        )
+
+        val loginButtonNew = binding.loginButtonNewAcc
+        loginButtonNew.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_onboardingFragment)
         )
 

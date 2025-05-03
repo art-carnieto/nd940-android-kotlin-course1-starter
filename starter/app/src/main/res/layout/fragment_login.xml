@@ -4,15 +4,15 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.LoginFragment"
-        android:background="@color/colorMainLogoBackground">
+        android:background="@color/colorMainLogoBackground"
+        tools:context=".ui.LoginFragment">
 
     <ImageView
             android:id="@+id/loginLogo"
-            android:layout_width="309dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="68dp"
-            android:layout_marginBottom="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
             android:contentDescription="@string/shoe_store_main_logo_content_description"
             android:src="@drawable/shoe_store_main_logo"
             app:layout_constraintBottom_toTopOf="@+id/loginEmailLabel"
@@ -71,25 +71,39 @@
             android:id="@+id/loginRememberMe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="141dp"
             android:text="@string/login_checkbox_remember_me"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/LoginPasswordField"
             app:layout_constraintTop_toBottomOf="@+id/LoginPasswordField" />
 
     <Button
-            android:id="@+id/login_button"
-            android:layout_width="131dp"
-            android:layout_height="53dp"
+            android:id="@+id/login_button_existing_acc"
+            android:layout_width="242dp"
+            android:layout_height="54dp"
             android:layout_marginTop="36dp"
             android:backgroundTint="@color/colorActionButton"
-            android:text="@string/login_login_button"
+            android:text="@string/login_button_login_existing_acc"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/loginRememberMe"
+            app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+            android:id="@+id/login_button_new_acc"
+            android:layout_width="242dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/colorActionButton"
+            android:text="@string/login_button_create_new_acc"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_button_existing_acc"
             app:layout_constraintVertical_bias="0.0" />
 
 

@@ -2,4 +2,9 @@
 <resources>
     <dimen name="onboarding_margin_horizontal">30dp</dimen>
     <dimen name="onboarding_margin_vertical">20dp</dimen>
+    <dimen name="shoeList_scroll_padding_horizontal">15dp</dimen>
+    <dimen name="shoeList_scroll_padding_vertical">50dp</dimen>
+    <dimen name="shoeList_shoeItem_margin_bottom">30dp</dimen>
+    <dimen name="shoeList_shoeItem_item_height">100dp</dimen>
+    <dimen name="shoeList_shoeItem_item_img_width">100dp</dimen>
 </resources>

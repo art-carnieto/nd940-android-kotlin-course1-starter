@@ -58,6 +58,17 @@
                     android:paddingStart="10dp"
                     android:text="TextView" />
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/shoeDetailsBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    android:layout_weight="0.3"
+                    android:clickable="true"
+                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    app:srcCompat="@android:drawable/ic_menu_zoom" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -83,6 +94,17 @@
                     android:gravity="center_vertical"
                     android:paddingStart="10dp"
                     android:text="TextView" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/shoeDetailsBtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    android:layout_weight="0.3"
+                    android:clickable="true"
+                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    app:srcCompat="@android:drawable/ic_menu_zoom" />
 
         </LinearLayout>
 
@@ -110,6 +132,17 @@
                     android:paddingStart="10dp"
                     android:text="TextView" />
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/shoeDetailsBtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    android:layout_weight="0.3"
+                    android:clickable="true"
+                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    app:srcCompat="@android:drawable/ic_menu_zoom" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -135,6 +168,17 @@
                     android:gravity="center_vertical"
                     android:paddingStart="10dp"
                     android:text="TextView" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/shoeDetailsBtn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    android:layout_weight="0.3"
+                    android:clickable="true"
+                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    app:srcCompat="@android:drawable/ic_menu_zoom" />
 
         </LinearLayout>
 
@@ -162,6 +206,17 @@
                     android:paddingStart="10dp"
                     android:text="TextView" />
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/shoeDetailsBtn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    android:layout_weight="0.3"
+                    android:clickable="true"
+                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    app:srcCompat="@android:drawable/ic_menu_zoom" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -187,6 +242,17 @@
                     android:gravity="center_vertical"
                     android:paddingStart="10dp"
                     android:text="TextView" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/shoeDetailsBtn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    android:layout_weight="0.3"
+                    android:clickable="true"
+                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    app:srcCompat="@android:drawable/ic_menu_zoom" />
 
         </LinearLayout>
 
@@ -214,6 +280,17 @@
                     android:paddingStart="10dp"
                     android:text="TextView" />
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/shoeDetailsBtn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    android:layout_weight="0.3"
+                    android:clickable="true"
+                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    app:srcCompat="@android:drawable/ic_menu_zoom" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -239,6 +316,17 @@
                     android:gravity="center_vertical"
                     android:paddingStart="10dp"
                     android:text="TextView" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/shoeDetailsBtn8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    android:layout_weight="0.3"
+                    android:clickable="true"
+                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    app:srcCompat="@android:drawable/ic_menu_zoom" />
 
         </LinearLayout>
 
@@ -266,6 +354,17 @@
                     android:paddingStart="10dp"
                     android:text="TextView" />
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/shoeDetailsBtn9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    android:layout_weight="0.3"
+                    android:clickable="true"
+                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    app:srcCompat="@android:drawable/ic_menu_zoom" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -291,6 +390,17 @@
                     android:gravity="center_vertical"
                     android:paddingStart="10dp"
                     android:text="TextView" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/shoeDetailsBtn10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    android:layout_weight="0.3"
+                    android:clickable="true"
+                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                    app:srcCompat="@android:drawable/ic_menu_zoom" />
 
         </LinearLayout>
 

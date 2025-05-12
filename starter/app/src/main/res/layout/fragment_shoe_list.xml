@@ -1,409 +1,430 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/shoeListScrollView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorMainLogoBackground"
-        android:orientation="vertical"
-        android:paddingTop="@dimen/shoeList_scroll_padding_vertical"
-        android:paddingBottom="@dimen/shoeList_scroll_padding_vertical">
 
-    <LinearLayout
-            android:id="@+id/shoeList"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+        <variable
+                name="viewModel"
+                type="com.udacity.shoestore.ui.ShoeListViewModel" />
+    </data>
+
+    <ScrollView 
+            android:id="@+id/shoeListScrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/shoeList_scroll_padding_horizontal"
-            android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
-            android:orientation="vertical">
-
-        <TextView
-                android:id="@+id/shoeListTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:ellipsize="marquee"
-                android:fontFamily="cursive"
-                android:gravity="center_horizontal"
-                android:paddingStart="@dimen/shoeList_scroll_padding_horizontal"
-                android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
-                android:scrollHorizontally="true"
-                android:singleLine="true"
-                android:text="@string/shoeList_title"
-                android:textIsSelectable="true"
-                android:textSize="38sp"
-                android:textStyle="bold|italic" />
-
+            android:background="@color/colorMainLogoBackground"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/shoeList_scroll_padding_vertical"
+            android:paddingBottom="@dimen/shoeList_scroll_padding_vertical">
+        
         <LinearLayout
-                android:id="@+id/shoeItem"
+                android:id="@+id/shoeList"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                android:background="@android:drawable/bottom_bar"
-                android:orientation="horizontal">
-
-            <ImageView
-                    android:id="@+id/shoeThumbnail"
-                    android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    app:srcCompat="@android:drawable/ic_menu_gallery" />
-
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/shoeList_scroll_padding_horizontal"
+                android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                android:orientation="vertical">
+    
             <TextView
-                    android:id="@+id/shoeName"
+                    android:id="@+id/shoeListTitle"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:gravity="center_vertical"
-                    android:paddingStart="10dp"
-                    android:text="TextView" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/shoeDetailsBtn"
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    android:layout_weight="0.3"
-                    android:clickable="true"
+                    android:layout_marginBottom="20dp"
+                    android:ellipsize="marquee"
+                    android:fontFamily="cursive"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="@dimen/shoeList_scroll_padding_horizontal"
                     android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    app:srcCompat="@android:drawable/ic_menu_zoom" />
-
-        </LinearLayout>
-
-        <LinearLayout
-                android:id="@+id/shoeItem2"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                android:background="@android:drawable/bottom_bar"
-                android:orientation="horizontal">
-
-            <ImageView
-                    android:id="@+id/shoeThumbnail2"
-                    android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    app:srcCompat="@android:drawable/ic_menu_gallery" />
-
-            <TextView
-                    android:id="@+id/shoeName2"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="@string/shoeList_title"
+                    android:textIsSelectable="true"
+                    android:textSize="38sp"
+                    android:textStyle="bold|italic" />
+    
+            <LinearLayout
+                    android:id="@+id/shoeItem"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:gravity="center_vertical"
-                    android:paddingStart="10dp"
-                    android:text="TextView" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/shoeDetailsBtn2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    android:layout_weight="0.3"
-                    android:clickable="true"
-                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    app:srcCompat="@android:drawable/ic_menu_zoom" />
-
-        </LinearLayout>
-
-        <LinearLayout
-                android:id="@+id/shoeItem3"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                android:background="@android:drawable/bottom_bar"
-                android:orientation="horizontal">
-
-            <ImageView
-                    android:id="@+id/shoeThumbnail3"
-                    android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    app:srcCompat="@android:drawable/ic_menu_gallery" />
-
-            <TextView
-                    android:id="@+id/shoeName3"
+                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                    android:background="@android:drawable/bottom_bar"
+                    android:orientation="horizontal">
+    
+                <ImageView
+                        android:id="@+id/shoeThumbnail"
+                        android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+    
+                <TextView
+                        android:id="@+id/shoeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:text="@={viewModel.shoeList.get(0).name}"
+                        tools:text="Test 0" />
+    
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/shoeDetailsBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        android:layout_weight="0.3"
+                        android:clickable="true"
+                        android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        app:srcCompat="@android:drawable/ic_menu_zoom" />
+    
+            </LinearLayout>
+    
+            <LinearLayout
+                    android:id="@+id/shoeItem2"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:gravity="center_vertical"
-                    android:paddingStart="10dp"
-                    android:text="TextView" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/shoeDetailsBtn3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    android:layout_weight="0.3"
-                    android:clickable="true"
-                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    app:srcCompat="@android:drawable/ic_menu_zoom" />
-
-        </LinearLayout>
-
-        <LinearLayout
-                android:id="@+id/shoeItem4"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                android:background="@android:drawable/bottom_bar"
-                android:orientation="horizontal">
-
-            <ImageView
-                    android:id="@+id/shoeThumbnail4"
-                    android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    app:srcCompat="@android:drawable/ic_menu_gallery" />
-
-            <TextView
-                    android:id="@+id/shoeName4"
+                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                    android:background="@android:drawable/bottom_bar"
+                    android:orientation="horizontal">
+    
+                <ImageView
+                        android:id="@+id/shoeThumbnail2"
+                        android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+    
+                <TextView
+                        android:id="@+id/shoeName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:text="@={viewModel.shoeList.get(1).name}"
+                        tools:text="Test 1" />
+    
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/shoeDetailsBtn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        android:layout_weight="0.3"
+                        android:clickable="true"
+                        android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        app:srcCompat="@android:drawable/ic_menu_zoom" />
+    
+            </LinearLayout>
+    
+            <LinearLayout
+                    android:id="@+id/shoeItem3"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:gravity="center_vertical"
-                    android:paddingStart="10dp"
-                    android:text="TextView" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/shoeDetailsBtn4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    android:layout_weight="0.3"
-                    android:clickable="true"
-                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    app:srcCompat="@android:drawable/ic_menu_zoom" />
-
-        </LinearLayout>
-
-        <LinearLayout
-                android:id="@+id/shoeItem5"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                android:background="@android:drawable/bottom_bar"
-                android:orientation="horizontal">
-
-            <ImageView
-                    android:id="@+id/shoeThumbnail5"
-                    android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    app:srcCompat="@android:drawable/ic_menu_gallery" />
-
-            <TextView
-                    android:id="@+id/shoeName5"
+                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                    android:background="@android:drawable/bottom_bar"
+                    android:orientation="horizontal">
+    
+                <ImageView
+                        android:id="@+id/shoeThumbnail3"
+                        android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+    
+                <TextView
+                        android:id="@+id/shoeName3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:text="@={viewModel.shoeList.get(2).name}"
+                        tools:text="Test 2" />
+    
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/shoeDetailsBtn3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        android:layout_weight="0.3"
+                        android:clickable="true"
+                        android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        app:srcCompat="@android:drawable/ic_menu_zoom" />
+    
+            </LinearLayout>
+    
+            <LinearLayout
+                    android:id="@+id/shoeItem4"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:gravity="center_vertical"
-                    android:paddingStart="10dp"
-                    android:text="TextView" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/shoeDetailsBtn5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    android:layout_weight="0.3"
-                    android:clickable="true"
-                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    app:srcCompat="@android:drawable/ic_menu_zoom" />
-
-        </LinearLayout>
-
-        <LinearLayout
-                android:id="@+id/shoeItem6"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                android:background="@android:drawable/bottom_bar"
-                android:orientation="horizontal">
-
-            <ImageView
-                    android:id="@+id/shoeThumbnail6"
-                    android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    app:srcCompat="@android:drawable/ic_menu_gallery" />
-
-            <TextView
-                    android:id="@+id/shoeName6"
+                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                    android:background="@android:drawable/bottom_bar"
+                    android:orientation="horizontal">
+    
+                <ImageView
+                        android:id="@+id/shoeThumbnail4"
+                        android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+    
+                <TextView
+                        android:id="@+id/shoeName4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:text="@={viewModel.shoeList.get(3).name}"
+                        tools:text="Test 3" />
+    
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/shoeDetailsBtn4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        android:layout_weight="0.3"
+                        android:clickable="true"
+                        android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        app:srcCompat="@android:drawable/ic_menu_zoom" />
+    
+            </LinearLayout>
+    
+            <LinearLayout
+                    android:id="@+id/shoeItem5"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:gravity="center_vertical"
-                    android:paddingStart="10dp"
-                    android:text="TextView" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/shoeDetailsBtn6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    android:layout_weight="0.3"
-                    android:clickable="true"
-                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    app:srcCompat="@android:drawable/ic_menu_zoom" />
-
-        </LinearLayout>
-
-        <LinearLayout
-                android:id="@+id/shoeItem7"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                android:background="@android:drawable/bottom_bar"
-                android:orientation="horizontal">
-
-            <ImageView
-                    android:id="@+id/shoeThumbnail7"
-                    android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    app:srcCompat="@android:drawable/ic_menu_gallery" />
-
-            <TextView
-                    android:id="@+id/shoeName7"
+                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                    android:background="@android:drawable/bottom_bar"
+                    android:orientation="horizontal">
+    
+                <ImageView
+                        android:id="@+id/shoeThumbnail5"
+                        android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+    
+                <TextView
+                        android:id="@+id/shoeName5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:text="@={viewModel.shoeList.get(4).name}"
+                        tools:text="Test 4" />
+    
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/shoeDetailsBtn5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        android:layout_weight="0.3"
+                        android:clickable="true"
+                        android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        app:srcCompat="@android:drawable/ic_menu_zoom" />
+    
+            </LinearLayout>
+    
+            <LinearLayout
+                    android:id="@+id/shoeItem6"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:gravity="center_vertical"
-                    android:paddingStart="10dp"
-                    android:text="TextView" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/shoeDetailsBtn7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    android:layout_weight="0.3"
-                    android:clickable="true"
-                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    app:srcCompat="@android:drawable/ic_menu_zoom" />
-
-        </LinearLayout>
-
-        <LinearLayout
-                android:id="@+id/shoeItem8"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                android:background="@android:drawable/bottom_bar"
-                android:orientation="horizontal">
-
-            <ImageView
-                    android:id="@+id/shoeThumbnail8"
-                    android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    app:srcCompat="@android:drawable/ic_menu_gallery" />
-
-            <TextView
-                    android:id="@+id/shoeName8"
+                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                    android:background="@android:drawable/bottom_bar"
+                    android:orientation="horizontal">
+    
+                <ImageView
+                        android:id="@+id/shoeThumbnail6"
+                        android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+    
+                <TextView
+                        android:id="@+id/shoeName6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:text="@={viewModel.shoeList.get(5).name}"
+                        tools:text="Test 5" />
+    
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/shoeDetailsBtn6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        android:layout_weight="0.3"
+                        android:clickable="true"
+                        android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        app:srcCompat="@android:drawable/ic_menu_zoom" />
+    
+            </LinearLayout>
+    
+            <LinearLayout
+                    android:id="@+id/shoeItem7"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:gravity="center_vertical"
-                    android:paddingStart="10dp"
-                    android:text="TextView" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/shoeDetailsBtn8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    android:layout_weight="0.3"
-                    android:clickable="true"
-                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    app:srcCompat="@android:drawable/ic_menu_zoom" />
-
-        </LinearLayout>
-
-        <LinearLayout
-                android:id="@+id/shoeItem9"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                android:background="@android:drawable/bottom_bar"
-                android:orientation="horizontal">
-
-            <ImageView
-                    android:id="@+id/shoeThumbnail9"
-                    android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    app:srcCompat="@android:drawable/ic_menu_gallery" />
-
-            <TextView
-                    android:id="@+id/shoeName9"
+                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                    android:background="@android:drawable/bottom_bar"
+                    android:orientation="horizontal">
+    
+                <ImageView
+                        android:id="@+id/shoeThumbnail7"
+                        android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+    
+                <TextView
+                        android:id="@+id/shoeName7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:text="@={viewModel.shoeList.get(6).name}"
+                        tools:text="Test 6" />
+    
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/shoeDetailsBtn7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        android:layout_weight="0.3"
+                        android:clickable="true"
+                        android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        app:srcCompat="@android:drawable/ic_menu_zoom" />
+    
+            </LinearLayout>
+    
+            <LinearLayout
+                    android:id="@+id/shoeItem8"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:gravity="center_vertical"
-                    android:paddingStart="10dp"
-                    android:text="TextView" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/shoeDetailsBtn9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    android:layout_weight="0.3"
-                    android:clickable="true"
-                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    app:srcCompat="@android:drawable/ic_menu_zoom" />
-
-        </LinearLayout>
-
-        <LinearLayout
-                android:id="@+id/shoeItem10"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                android:background="@android:drawable/bottom_bar"
-                android:orientation="horizontal">
-
-            <ImageView
-                    android:id="@+id/shoeThumbnail10"
-                    android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    app:srcCompat="@android:drawable/ic_menu_gallery" />
-
-            <TextView
-                    android:id="@+id/shoeName10"
+                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                    android:background="@android:drawable/bottom_bar"
+                    android:orientation="horizontal">
+    
+                <ImageView
+                        android:id="@+id/shoeThumbnail8"
+                        android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+    
+                <TextView
+                        android:id="@+id/shoeName8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:text="@={viewModel.shoeList.get(7).name}"
+                        tools:text="Test 7" />
+    
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/shoeDetailsBtn8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        android:layout_weight="0.3"
+                        android:clickable="true"
+                        android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        app:srcCompat="@android:drawable/ic_menu_zoom" />
+    
+            </LinearLayout>
+    
+            <LinearLayout
+                    android:id="@+id/shoeItem9"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:gravity="center_vertical"
-                    android:paddingStart="10dp"
-                    android:text="TextView" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/shoeDetailsBtn10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    android:layout_weight="0.3"
-                    android:clickable="true"
-                    android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
-                    app:srcCompat="@android:drawable/ic_menu_zoom" />
-
+                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                    android:background="@android:drawable/bottom_bar"
+                    android:orientation="horizontal">
+    
+                <ImageView
+                        android:id="@+id/shoeThumbnail9"
+                        android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+    
+                <TextView
+                        android:id="@+id/shoeName9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:text="@={viewModel.shoeList.get(8).name}"
+                        tools:text="Test 8" />
+    
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/shoeDetailsBtn9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        android:layout_weight="0.3"
+                        android:clickable="true"
+                        android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        app:srcCompat="@android:drawable/ic_menu_zoom" />
+    
+            </LinearLayout>
+    
+            <LinearLayout
+                    android:id="@+id/shoeItem10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                    android:background="@android:drawable/bottom_bar"
+                    android:orientation="horizontal">
+    
+                <ImageView
+                        android:id="@+id/shoeThumbnail10"
+                        android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+    
+                <TextView
+                        android:id="@+id/shoeName10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:text="@={viewModel.shoeList.get(9).name}"
+                        tools:text="Test 9" />
+    
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/shoeDetailsBtn10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        android:layout_weight="0.3"
+                        android:clickable="true"
+                        android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
+                        app:srcCompat="@android:drawable/ic_menu_zoom" />
+    
+            </LinearLayout>
+    
         </LinearLayout>
-
-    </LinearLayout>
-
-</ScrollView>
+    
+    </ScrollView>
+</layout>

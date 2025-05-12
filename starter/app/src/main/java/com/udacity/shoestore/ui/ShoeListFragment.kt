@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
 
 class ShoeListFragment : Fragment() {
@@ -14,6 +15,8 @@ class ShoeListFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding
 
+    private lateinit var shoeListviewModel : ShoeListViewModel
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -22,6 +25,10 @@ class ShoeListFragment : Fragment() {
 
         _binding = FragmentShoeListBinding.inflate(inflater, container, false)
         val view = binding.root
+
+        shoeListviewModel = ViewModelProvider(this).get(ShoeListViewModel::class.java)
+        binding.viewModel = shoeListviewModel
+        binding.lifecycleOwner = this
 
         return view
     }

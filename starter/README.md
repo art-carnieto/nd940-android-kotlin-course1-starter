@@ -39,19 +39,19 @@ Open the starter project in Android Studio
 7. Create a new Instruction destination that includes: :heavy_check_mark:
 
    * A new layout :heavy_check_mark:
-   * At least 2 textviews
-   * A navigation button with actions to navigate to the shoe list screen
+   * At least 2 textviews :heavy_check_mark:
+   * A navigation button with actions to navigate to the shoe list screen :heavy_check_mark:
 
-8. Create a class that extends ViewModel
+8. Create a class that extends ViewModel :heavy_check_mark:
 
-   *  Use a LiveData field that returns the list of shoes
+   *  Use a LiveData field that returns the list of shoes :heavy_check_mark:
 
-9. Create a new Shoe List destination that includes:
+9. Create a new Shoe List destination that includes: :heavy_check_mark:
 
-   * A new layout
-   * A ScrollView
-   * A LinearLayout for Shoe Items
-   * A FloatingActionButton with an action to navigate to the shoe detail screen
+   * A new layout :heavy_check_mark:
+   * A ScrollView :heavy_check_mark:
+   * A LinearLayout for Shoe Items :heavy_check_mark:
+   * A FloatingActionButton with an action to navigate to the shoe detail screen :heavy_check_mark:
 
 10. In MainActivity, setup the nav controller with the toolbar and an AppBarConfiguration.
 

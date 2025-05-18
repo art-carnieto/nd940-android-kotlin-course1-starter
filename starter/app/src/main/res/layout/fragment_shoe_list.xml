@@ -43,21 +43,22 @@
                     android:textIsSelectable="true"
                     android:textSize="38sp"
                     android:textStyle="bold|italic" />
-    
+
+            <!-- mocassin -->
             <LinearLayout
-                    android:id="@+id/shoeItem"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                    android:background="@android:drawable/bottom_bar"
-                    android:orientation="horizontal">
+                android:id="@+id/shoeItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal">
     
                 <ImageView
                         android:id="@+id/shoeThumbnail"
                         android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+                        app:srcCompat="@drawable/mocassin" />
     
                 <TextView
                         android:id="@+id/shoeName"
@@ -81,21 +82,22 @@
                         app:srcCompat="@android:drawable/ic_menu_zoom" />
     
             </LinearLayout>
-    
+
+            <!-- oxford -->
             <LinearLayout
-                    android:id="@+id/shoeItem2"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                    android:background="@android:drawable/bottom_bar"
-                    android:orientation="horizontal">
+                android:id="@+id/shoeItem2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal">
     
                 <ImageView
                         android:id="@+id/shoeThumbnail2"
                         android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+                        app:srcCompat="@drawable/oxford" />
     
                 <TextView
                         android:id="@+id/shoeName2"
@@ -119,21 +121,22 @@
                         app:srcCompat="@android:drawable/ic_menu_zoom" />
     
             </LinearLayout>
-    
+
+            <!-- flip flops -->
             <LinearLayout
-                    android:id="@+id/shoeItem3"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                    android:background="@android:drawable/bottom_bar"
-                    android:orientation="horizontal">
+                android:id="@+id/shoeItem3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal">
     
                 <ImageView
                         android:id="@+id/shoeThumbnail3"
                         android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+                        app:srcCompat="@drawable/havaianas" />
     
                 <TextView
                         android:id="@+id/shoeName3"
@@ -157,21 +160,22 @@
                         app:srcCompat="@android:drawable/ic_menu_zoom" />
     
             </LinearLayout>
-    
+
+            <!-- crocs -->
             <LinearLayout
-                    android:id="@+id/shoeItem4"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                    android:background="@android:drawable/bottom_bar"
-                    android:orientation="horizontal">
+                android:id="@+id/shoeItem4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal">
     
                 <ImageView
                         android:id="@+id/shoeThumbnail4"
                         android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+                        app:srcCompat="@drawable/crocs" />
     
                 <TextView
                         android:id="@+id/shoeName4"
@@ -195,21 +199,22 @@
                         app:srcCompat="@android:drawable/ic_menu_zoom" />
     
             </LinearLayout>
-    
+
+            <!-- sandals -->
             <LinearLayout
-                    android:id="@+id/shoeItem5"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                    android:background="@android:drawable/bottom_bar"
-                    android:orientation="horizontal">
+                android:id="@+id/shoeItem5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal">
     
                 <ImageView
                         android:id="@+id/shoeThumbnail5"
                         android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+                        app:srcCompat="@drawable/sandal" />
     
                 <TextView
                         android:id="@+id/shoeName5"
@@ -233,21 +238,22 @@
                         app:srcCompat="@android:drawable/ic_menu_zoom" />
     
             </LinearLayout>
-    
+
+            <!-- aqua shoes -->
             <LinearLayout
-                    android:id="@+id/shoeItem6"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                    android:background="@android:drawable/bottom_bar"
-                    android:orientation="horizontal">
+                android:id="@+id/shoeItem6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal">
     
                 <ImageView
                         android:id="@+id/shoeThumbnail6"
                         android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+                        app:srcCompat="@drawable/aqua_shoes" />
     
                 <TextView
                         android:id="@+id/shoeName6"
@@ -271,21 +277,22 @@
                         app:srcCompat="@android:drawable/ic_menu_zoom" />
     
             </LinearLayout>
-    
+
+            <!-- high heels -->
             <LinearLayout
-                    android:id="@+id/shoeItem7"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                    android:background="@android:drawable/bottom_bar"
-                    android:orientation="horizontal">
+                android:id="@+id/shoeItem7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal">
     
                 <ImageView
                         android:id="@+id/shoeThumbnail7"
                         android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+                        app:srcCompat="@drawable/high_heels" />
     
                 <TextView
                         android:id="@+id/shoeName7"
@@ -309,21 +316,22 @@
                         app:srcCompat="@android:drawable/ic_menu_zoom" />
     
             </LinearLayout>
-    
+
+            <!-- geta -->
             <LinearLayout
-                    android:id="@+id/shoeItem8"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                    android:background="@android:drawable/bottom_bar"
-                    android:orientation="horizontal">
+                android:id="@+id/shoeItem8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal">
     
                 <ImageView
                         android:id="@+id/shoeThumbnail8"
                         android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+                        app:srcCompat="@drawable/geta" />
     
                 <TextView
                         android:id="@+id/shoeName8"
@@ -347,21 +355,22 @@
                         app:srcCompat="@android:drawable/ic_menu_zoom" />
     
             </LinearLayout>
-    
+
+            <!-- slippers -->
             <LinearLayout
-                    android:id="@+id/shoeItem9"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                    android:background="@android:drawable/bottom_bar"
-                    android:orientation="horizontal">
+                android:id="@+id/shoeItem9"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal">
     
                 <ImageView
                         android:id="@+id/shoeThumbnail9"
                         android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+                        app:srcCompat="@drawable/slippers" />
     
                 <TextView
                         android:id="@+id/shoeName9"
@@ -385,21 +394,22 @@
                         app:srcCompat="@android:drawable/ic_menu_zoom" />
     
             </LinearLayout>
-    
+
+            <!-- sneakers -->
             <LinearLayout
-                    android:id="@+id/shoeItem10"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/shoeList_shoeItem_item_height"
-                    android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
-                    android:background="@android:drawable/bottom_bar"
-                    android:orientation="horizontal">
+                android:id="@+id/shoeItem10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shoeList_shoeItem_item_height"
+                android:layout_marginBottom="@dimen/shoeList_shoeItem_margin_bottom"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal">
     
                 <ImageView
                         android:id="@+id/shoeThumbnail10"
                         android:layout_width="@dimen/shoeList_shoeItem_item_img_width"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+                        app:srcCompat="@drawable/sneakers" />
     
                 <TextView
                         android:id="@+id/shoeName10"

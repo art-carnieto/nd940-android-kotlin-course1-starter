@@ -74,3 +74,9 @@ Open the starter project in Android Studio
     * Observe the shoes variable from the ViewModel
     * Use DataBindingUtil to inflate the shoe_list layout
     * Add a new layout item into the scrollview for each shoe.
+
+## Extra TODOs
+
+- Fix left margin of image of shoe item touching the left border of item container.
+- Maybe fix not being able to scroll on login page when on landscape orientation.
+- Maybe fix not being able to scroll nav header text when on landscape orientation.

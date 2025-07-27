@@ -53,7 +53,7 @@ Open the starter project in Android Studio
    * A LinearLayout for Shoe Items :heavy_check_mark:
    * A FloatingActionButton with an action to navigate to the shoe detail screen :heavy_check_mark:
 
-10. In MainActivity, setup the nav controller with the toolbar and an AppBarConfiguration.
+10. In MainActivity, setup the nav controller with the toolbar and an AppBarConfiguration. :heavy_check_mark:
 
 11. Create a new Shoe Detail destination that includes:
 

@@ -57,12 +57,12 @@ Open the starter project in Android Studio
 
 11. Create a new Shoe Detail destination that includes:
 
-    * A new layout
+    * A new layout :heavy_check_mark:
     * A TextView label and EditView for the
-      * Shoe Name
-      * Company
-      * Shoe Size
-      * Description
+      * Shoe Name :heavy_check_mark:
+      * Company :heavy_check_mark:
+      * Shoe Size :heavy_check_mark:
+      * Description :heavy_check_mark:
     * A Cancel button with an action to navigate back to the shoe list screen
     * A Save button with an action to navigate back to the shoe list screen and add a new Shoe to the Shoe View Model
 
@@ -77,6 +77,8 @@ Open the starter project in Android Studio
 
 ## Extra TODOs
 
+- Fix back navigation closing app when doing back action on nav bar / back gesture.
 - Fix left margin of image of shoe item touching the left border of item container.
+- Add a quick and simple video on the onboarding screen. (check TODO comment on fragment_onboarding layout file)
 - Maybe fix not being able to scroll on login page when on landscape orientation.
 - Maybe fix not being able to scroll nav header text when on landscape orientation.

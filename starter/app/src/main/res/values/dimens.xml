@@ -7,5 +7,6 @@
     <dimen name="shoeList_shoeItem_margin_bottom">30dp</dimen>
     <dimen name="shoeList_shoeItem_item_height">100dp</dimen>
     <dimen name="shoeList_shoeItem_item_img_width">100dp</dimen>
+    <dimen name="shoeList_shoeItem_item_img_start_padding">4dp</dimen>
     <dimen name="navHeader_margin_horizontal">15dp</dimen>
 </resources>

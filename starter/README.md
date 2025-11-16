@@ -78,7 +78,6 @@ Open the starter project in Android Studio
 ## Extra TODOs
 
 - Fix back navigation closing app when doing back action on nav bar / back gesture.
-- Fix left margin of image of shoe item touching the left border of item container.
 - Add a quick and simple video on the onboarding screen. (check TODO comment on fragment_onboarding layout file)
 - Maybe fix not being able to scroll on login page when on landscape orientation.
 - Maybe fix not being able to scroll nav header text when on landscape orientation.

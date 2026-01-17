@@ -8,6 +8,9 @@
         <variable
                 name="viewModel"
                 type="com.udacity.shoestore.ui.ShoeListViewModel" />
+        <variable
+                name="fragment"
+                type="com.udacity.shoestore.ui.ShoeListFragment" />
     </data>
 
     <LinearLayout
@@ -74,7 +77,7 @@
                             android:text="@={viewModel.shoeList.get(0).name}"
                             tools:text="Test 0" />
 
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    <Button
                             android:id="@+id/shoeDetailsBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -82,8 +85,11 @@
                             android:layout_marginEnd="@dimen/shoeList_scroll_padding_horizontal"
                             android:layout_weight="0.3"
                             android:clickable="true"
+                            android:focusable="true"
+                            android:paddingStart="0dp"
                             android:paddingEnd="@dimen/shoeList_scroll_padding_horizontal"
-                            app:srcCompat="@android:drawable/ic_menu_zoom" />
+                            app:srcCompat="@android:drawable/ic_menu_zoom"
+                            android:onClick="@{fragment::testClick}"/>
 
                 </LinearLayout>
 

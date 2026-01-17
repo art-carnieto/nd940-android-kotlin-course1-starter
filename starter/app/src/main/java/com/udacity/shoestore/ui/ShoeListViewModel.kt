@@ -8,8 +8,8 @@ import timber.log.Timber
 
 class ShoeListViewModel : ViewModel() {
 
-    private val _shoeList = MutableLiveData<List<Shoe>>()
-    val shoeList: LiveData<List<Shoe>>
+    private val _shoeList = MutableLiveData<List<Shoe>?>()
+    val shoeList: LiveData<List<Shoe>?>
         get() = _shoeList
 
     init {
@@ -108,5 +108,23 @@ class ShoeListViewModel : ViewModel() {
                 mutableListOf<String>("sneakers")
             )
         )
+    }
+
+    fun getShoe(index: Int) : Shoe? = shoeList.value?.get(index)
+
+    fun editShoe(newShoe: Shoe, index: Int) {
+        val newShoeList = _shoeList.value?.toMutableList()
+        if(newShoeList?.get(index) == null) {
+            Timber.e("Invalid shoe index $index!")
+            return
+        }
+        newShoeList[index] = newShoe
+        _shoeList.value = newShoeList
+    }
+
+    fun createNewShoe(newShoe: Shoe) {
+        val newShoeList = _shoeList.value?.toMutableList()
+        newShoeList?.add(newShoe)
+        _shoeList.value = newShoeList
     }
 }

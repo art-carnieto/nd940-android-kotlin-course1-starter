@@ -5,8 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
 import timber.log.Timber
+import java.sql.Time
 
 class ShoeDetailFragment : Fragment() {
 
@@ -15,6 +17,8 @@ class ShoeDetailFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding
+
+    private lateinit var shoeListviewModel : ShoeListViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -25,6 +29,27 @@ class ShoeDetailFragment : Fragment() {
         _binding = FragmentShoeDetailBinding.inflate(inflater, container, false)
         val view = binding.root
 
+        shoeListviewModel = ViewModelProvider(this).get(ShoeListViewModel::class.java)
+        binding.viewModel = shoeListviewModel
+        binding.lifecycleOwner = this
+
+        //test
+        //openShoe(1)
+        var args = ShoeDetailFragmentArgs.fromBundle(requireArguments())
+        Timber.d("args = ${args.index}")
+
         return view
+    }
+
+    fun openShoe (index: Int) {
+        val shoe = shoeListviewModel.getShoe(index)
+        if(shoe == null) Timber.e("Trying to open invalid shoe index $index!")
+        else {
+            // binding.shoeImage = shoe.images.get(0) TODO: fix image loading!
+            binding.shoeNameEdit.setText(shoe.name)
+            binding.companyEdit.setText(shoe.company)
+            binding.shoeSizeEdit.setText(shoe.size.toString())
+            binding.descriptionEdit.setText(shoe.description)
+        }
     }
 }

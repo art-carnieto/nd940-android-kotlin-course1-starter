@@ -50,7 +50,8 @@
             android:label="ShoeDetailFragment"
             tools:layout="@layout/fragment_shoe_detail" >
         <argument
-                android:name="index"
-                app:argType="integer" />
+                android:name="shoeName"
+                app:argType="string"
+                app:nullable="true" />
     </fragment>
 </navigation>

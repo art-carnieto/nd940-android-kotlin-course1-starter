@@ -3,6 +3,7 @@ package com.udacity.shoestore.ui
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.udacity.shoestore.R
 import com.udacity.shoestore.models.Shoe
 import timber.log.Timber
 
@@ -13,10 +14,8 @@ class ShoeListViewModel : ViewModel() {
         get() = _shoeList
 
     init {
-        Timber.d("init")
+        Timber.d("init ShoeListViewModel")
         populateShoes()
-        Timber.d("shoeList=${shoeList.value}")
-        Timber.d("shoe[0] name=${shoeList.value?.get(0)?.name}")
     }
 
     private fun populateShoes() {
@@ -27,7 +26,7 @@ class ShoeListViewModel : ViewModel() {
                 "Italian Shoes",
                 "A moccasin is a shoe, made of deerskin or other soft leather, consisting" +
                         " of a sole and sides made of one piece of leather, stitched together at the top, and sometimes with a vamp.",
-                mutableListOf<String>("mocassin")
+                R.drawable.mocassin
             ),
             Shoe(
                 "Oxford",
@@ -35,7 +34,7 @@ class ShoeListViewModel : ViewModel() {
                 "Fancy Wedding Shoes Company",
                 "An Oxford shoe is a type of shoe characterized by shoelace eyelet tabs that " +
                         "are attached under the vamp, a feature termed \"closed lacing\".",
-                mutableListOf<String>("oxford")
+                R.drawable.oxford
             ),
             Shoe(
                 "Flip Flops",
@@ -44,7 +43,7 @@ class ShoeListViewModel : ViewModel() {
                 "Havaianas is a Brazilian brand of flip-flop sandals created and patented in 1962. " +
                         "The brand was founded by Brazilian manufacturer Alpargatas S.A.. Inspired by the Japanese " +
                         "zori sandals, Havaianas became the first mass-produced flip-flops made out of rubber.",
-                mutableListOf<String>("havaianas")
+                R.drawable.havaianas
             ),
             Shoe(
                 "Crocs",
@@ -53,7 +52,7 @@ class ShoeListViewModel : ViewModel() {
                 "Crocs, Inc. is an American footwear company based in Broomfield, Colorado. " +
                         "It manufactures and markets the Crocs brand of foam footwear. " +
                         "Crocs, Inc. terms these \"clogs,\" but they do not contain wood like traditional clogs.",
-                mutableListOf<String>("crocs")
+                R.drawable.crocs
             ),
             Shoe(
                 "Sandal",
@@ -61,7 +60,7 @@ class ShoeListViewModel : ViewModel() {
                 "Amazing Sandals Corp.",
                 "Sandals are an open type of shoe, consisting of a sole held to the wearer's foot " +
                         "by straps going over the instep and around the ankle. Sandals can also have a heel.",
-                mutableListOf<String>("sandal")
+                R.drawable.sandal
             ),
             Shoe(
                 "Aqua Shoe",
@@ -70,7 +69,7 @@ class ShoeListViewModel : ViewModel() {
                 "A water shoe is a type of footwear that is typically used for activities where the feet " +
                         "are likely to become wet, such as kayaking. Water shoes are usually made of mesh and have a " +
                         "hard sole used to prevent cuts and abrasions when walking in wet, rocky environments.",
-                mutableListOf<String>("aqua_shoes")
+                R.drawable.aqua_shoes
             ),
             Shoe(
                 "High-heeled shoe",
@@ -79,7 +78,7 @@ class ShoeListViewModel : ViewModel() {
                 "High-heeled shoes, also known as high heels (colloquially shortened to heels), are a type " +
                         "of shoe with an upward-angled sole. The heel in such shoes is raised above the ball of the foot. " +
                         "High heels cause the legs to appear longer, make the wearer appear taller, and accentuate the calf muscle.",
-                mutableListOf<String>("high_heels")
+                R.drawable.high_heels
             ),
             Shoe(
                 "Geta",
@@ -88,7 +87,7 @@ class ShoeListViewModel : ViewModel() {
                 "Geta (下駄) (pl. geta) are traditional Japanese footwear resembling flip-flops. A kind of " +
                         "sandal, geta have a flat wooden base elevated with up to three (though commonly two) \"teeth\", " +
                         "held on the foot with a fabric thong, which keeps the foot raised above the ground.",
-                mutableListOf<String>("geta")
+                R.drawable.geta
             ),
             Shoe(
                 "Slipper",
@@ -97,7 +96,7 @@ class ShoeListViewModel : ViewModel() {
                 "Slippers are a type of shoes falling under the broader category of light footwear, that are " +
                         "easy to put on and off and are intended to be worn indoors, particularly at home. They provide comfort " +
                         "and protection for the feet when walking indoors.",
-                mutableListOf<String>("slippers")
+                R.drawable.slippers
             ),
             Shoe(
                 "Sneaker",
@@ -105,7 +104,7 @@ class ShoeListViewModel : ViewModel() {
                 "Top Sports",
                 "Sneakers (US) or trainers (UK), also known by a wide variety of other names, are shoes primarily " +
                         "designed for sports or other forms of physical exercise, but are also widely used for everyday casual wear.",
-                mutableListOf<String>("sneakers")
+                R.drawable.sneakers
             )
         )
     }

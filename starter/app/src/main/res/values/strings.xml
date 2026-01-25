@@ -15,4 +15,7 @@
     <string name="instructions_title">Instructions</string>
     <string name="instructions_text">The next screen is the list of shoes available on the store. Click on one of the shoes to see the details of that shoe.\n\nOn the shoe details screen, you can check better images of that shoe, more details about it such as available sizes, colors, pricing, etc.\n\nOn that screen you can confirm your choice and put it in the shopping cart.\n\nYou can navigate between the screens by using the top left back button and the navigation drawer on main shoe list screen.\n\n\n\nReminder: If you get lost or need any kind of support, access the help menu located on the top left menu button with a question mark icon (?).</string>
     <string name="shoeList_title">Choose your shoe</string>
+    <string name="shoe_image_placeholder_content_description">Shoe image</string>
+    <string name="shoe_name_placeholder">Shoe name</string>
+    <string name="add_shoe_button_content_description">Add shoe button</string>
 </resources>

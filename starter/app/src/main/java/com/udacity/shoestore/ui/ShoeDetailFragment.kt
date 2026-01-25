@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
 import timber.log.Timber
-import java.sql.Time
 
 class ShoeDetailFragment : Fragment() {
 
@@ -35,8 +34,8 @@ class ShoeDetailFragment : Fragment() {
 
         //test
         //openShoe(1)
-        var args = ShoeDetailFragmentArgs.fromBundle(requireArguments())
-        Timber.d("args = ${args.index}")
+        val args = ShoeDetailFragmentArgs.fromBundle(requireArguments())
+        Timber.d("args = ${args.shoeName}")
 
         return view
     }

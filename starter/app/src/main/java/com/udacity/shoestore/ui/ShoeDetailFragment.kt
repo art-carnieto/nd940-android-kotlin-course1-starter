@@ -32,23 +32,25 @@ class ShoeDetailFragment : Fragment() {
         binding.viewModel = shoeListviewModel
         binding.lifecycleOwner = this
 
-        //test
-        //openShoe(1)
         val args = ShoeDetailFragmentArgs.fromBundle(requireArguments())
         Timber.d("args = ${args.shoeName}")
+
+        openShoe(args.shoeName.toString())
 
         return view
     }
 
-    fun openShoe (index: Int) {
-        val shoe = shoeListviewModel.getShoe(index)
-        if(shoe == null) Timber.e("Trying to open invalid shoe index $index!")
+    fun openShoe (name : String) {
+        val shoe = shoeListviewModel.getShoe(name)
+        if(shoe == null) Timber.e("Trying to open invalid shoe $name!")
         else {
-            // binding.shoeImage = shoe.images.get(0) TODO: fix image loading!
-            binding.shoeNameEdit.setText(shoe.name)
-            binding.companyEdit.setText(shoe.company)
-            binding.shoeSizeEdit.setText(shoe.size.toString())
-            binding.descriptionEdit.setText(shoe.description)
+            binding.apply {
+                shoeImage.setImageResource(shoe.imgResourceId)
+                shoeNameEdit.setText(shoe.name)
+                companyEdit.setText(shoe.company)
+                shoeSizeEdit.setText(shoe.size.toString())
+                descriptionEdit.setText(shoe.description)
+            }
         }
     }
 }

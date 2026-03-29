@@ -109,7 +109,7 @@ class ShoeListViewModel : ViewModel() {
         )
     }
 
-    fun getShoe(index: Int) : Shoe? = shoeList.value?.get(index)
+    fun getShoe(name: String) : Shoe? = shoeList.value?.find { name == it.name }
 
     fun editShoe(newShoe: Shoe, index: Int) {
         val newShoeList = _shoeList.value?.toMutableList()
